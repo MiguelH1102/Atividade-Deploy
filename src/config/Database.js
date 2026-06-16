@@ -46,7 +46,7 @@ export async function initializeDatabase() {
         });
 
 
-        const dbName = process.env.DB_DATABASE || 'deploy';
+        const dbName = process.env.DB_DATABASE || 'desenvolvimento_sistema_produto';
 
 
         await tempConnection.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\`;`);
